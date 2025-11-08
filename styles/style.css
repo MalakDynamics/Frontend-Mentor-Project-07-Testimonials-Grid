@@ -22,6 +22,7 @@
 
     --grey-100: #E7EAEE;
     --grey-200: #CFCFCF;
+    --grey-300: #A3AAB4;
     --grey-400: #676D7E;
     --grey-500: #48556A;
 
@@ -49,7 +50,7 @@
     --font-size-1: 0.6875rem;   /* 11px */
 
     --line-height-3: 140%;
-    --line--height-2: 120%;
+    --line-height-2: 120%;
     --line-height-1: 110%;
 }
 
@@ -65,14 +66,13 @@ body {
 }
 
 .main {
-    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
     background-color: #F6F5F6;
-    padding: 4.5625rem 2.1875; /* placeholder */
+    padding: 4.5625rem 2.1875rem; /* placeholder */
 }
 
 .grid-container {
@@ -80,12 +80,12 @@ body {
 
     display: grid;
     grid-template-columns: 1fr;
-    gap: var(--spacing-2);
+    gap: var(--spacing-5);
 }
 
 .card {
     border-radius: var(--corner-radius-card);
-    padding: var(--spacing-2);
+    padding: var(--spacing-5);
 
     display: flex;
     flex-direction: column;
@@ -102,25 +102,95 @@ body {
     display: inline-flex;
     gap: 1.0625rem; /* 17px */
     align-items: center;
+    width: fit-content;
 }
+.card-profile__image {
+    border-radius: var(--corner-radius-image);
+    border: solid transparent 0.125rem;
+}
+.card:nth-child(1) .card-profile__image { border-color: var(--purple-300); }
+.card:nth-child(2) .card-profile__image { border-color: transparent; }
+.card:nth-child(3) .card-profile__image { border-color: transparent; }
+.card:nth-child(4) .card-profile__image { border-color: var(--purple-500); }
+.card:nth-child(5) .card-profile__image { border-color: transparent; }
 
 .card-profile__text-blob {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .card-profile__text-blob--name {
     font-size: var(--font-size-2);
     font-weight: var(--font-weight-medium);
-    color: var(--grey-500);
     line-height: 100%;
 }
 
 .card-profile__text-blob--occupation {
     font-size: var(--font-size-1);
     font-weight: var(--font-weight-medium);
-    color: var(--grey-400);
     line-height: var(--line-height-1);
 }
+
+.card__top-text {
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-2);
+}
+
+.card__bottom-text {
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-3);
+}
+/* .card--purple {   NEED TO ADD THIS, SWAP TO VARIABLES
+  background-color: var(--purple-500);
+  --accent-color: var(--purple-300);
+  --name-color: var(--white);
+  --occupation-color: var(--purple-50);
+  --top-text-color: var(--white);
+  --bottom-text-color: var(--purple-50);
+} 
+  
+.card-profile__image { border-color: var(--accent-color); }
+.card-profile__text-blob--name { color: var(--name-color); }
+.card-profile__text-blob--occupation { color: var(--occupation-color); }
+.card__top-text { color: var(--top-text-color); }
+.card__bottom-text { color: var(--bottom-text-color); }
+
+*/
+.card:nth-child(1) .card-profile__text-blob--name,
+.card:nth-child(1) .card__top-text,
+.card:nth-child(2) .card-profile__text-blob--name,
+.card:nth-child(2) .card__top-text,
+.card:nth-child(4) .card-profile__text-blob--name,
+.card:nth-child(4) .card__top-text {
+    color: var(--white);
+}
+
+.card:nth-child(1) .card-profile__text-blob--occupation,
+.card:nth-child(1) .card__bottom-text {
+    color: var(--purple-50);
+}
+
+.card:nth-child(2) .card-profile__text-blob--occupation { color: var(--grey-300); }
+.card:nth-child(2) .card__bottom-text { color: var(--grey-100);}
+
+.card:nth-child(3) .card-profile__text-blob--name,
+.card:nth-child(3) .card__top-text { color: var(--grey-500); }
+
+.card:nth-child(3) .card-profile__text-blob--occupation,
+.card:nth-child(3) .card__bottom-text { color: var(--grey-400); }
+
+.card:nth-child(4) .card-profile__text-blob--occupation { color: var(--grey-200); }
+.card:nth-child(4) .card__top-text { color: var(--grey-200); }
+.card:nth-child(4) .card__bottom-text { color: var(--grey-100); }
+
+.card:nth-child(5) .card-profile__text-blob--name,
+.card:nth-child(5) .card__top-text { color: var(--grey-500); }
+.card:nth-child(5) .card-profile__text-blob--occupation { color: var(--grey-300); }
+.card:nth-child(5) .card__bottom-text { color: var(--grey-500); }
 
 .screen-reader-title:not(:focus):not(:active) {
     clip: rect(0 0 0 0); 
