@@ -1,0 +1,64 @@
+/* barlow-500 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/barlow-v13-latin-500.woff2') format('woff2'); 
+}
+/* barlow-600 - latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/barlow-v13-latin-600.woff2') format('woff2'); 
+}
+
+:root {
+    --black: #121212;
+    --dark-blue: #19202D;
+    --white: #FFFFFF;
+
+    --grey-100: #E7EAEE;
+    --grey-200: #CFCFCF;
+    --grey-400: #676D7E;
+    --grey-500: #48556A;
+
+    --purple-50: #EDE4FF;
+    --purple-300: #A775F1;
+    --purple-500: #733FC8;
+
+    --spacing-1: 0.25rem;   /* 4px */
+    --spacing-2: 0.5rem;    /* 8px */
+    --spacing-3: 1.0rem;    /* 16px */
+    --spacing-4: 1.5rem;    /* 24px */
+    --spacing-5: 2.0rem;    /* 32px */
+    --spacing-6: 2.5rem;    /* 40px */
+
+    --corner-radius-card: 0.5rem;
+    --corner-radius-image: 50%;
+}
+
+*, *::before, *::after { padding:0; margin: 0; box-sizing: border-box; }
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+.main 
+
+.screen-reader-title:not(:focus):not(:active) {
+    clip: rect(0 0 0 0); 
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap; 
+    width: 1px;
+}
