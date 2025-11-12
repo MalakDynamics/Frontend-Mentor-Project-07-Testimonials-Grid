@@ -1,6 +1,6 @@
 # Frontend-Mentor-Project-07-Testimonials-Grid
 My attempt at Frontend Mentor Responsive Design Path - Project 3
-This is a solution to the [Testimonials Grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials Grid challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
 ## Table of contents
