@@ -45,6 +45,11 @@
     --font-weight-medium: 500;
     --font-weight-bold: 600;
 
+    /* Font sizes according to my own eyes */
+    --corrected-font-16: 1rem;
+    --corrected-font-12: 0.75rem;
+
+    /* Font sizes according to Figma */
     --font-size-3: 1.25rem;     /* 20px */
     --font-size-2: 0.8125rem;    /* 13px */
     --font-size-1: 0.6875rem;   /* 11px */
@@ -93,7 +98,7 @@ body {
     font-family: var(--font-family);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    
+
     box-shadow: 40px 60px 50px -47px #48556A3D;
 }
 .card.purple { 
@@ -169,13 +174,13 @@ body {
 }
 .card__top-text {
     color: var(--top-text-color);
-    font-size: var(--font-size-3);
+    font-size: var(--corrected-font-16);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-2);
 }
 .card__bottom-text {
     color:var(--bottom-text-color);
-    font-size: var(--font-size-2);
+    font-size: var(--corrected-font-12);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-3);
 }
