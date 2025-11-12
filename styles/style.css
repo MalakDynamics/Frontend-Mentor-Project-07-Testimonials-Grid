@@ -4,7 +4,7 @@
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 500;
-  src: url('../fonts/barlow-semi-condensed-v16-latin-500.woff2') format('woff2'); 
+  src: url('../assets/fonts/barlow-semi-condensed-v16-latin-500.woff2') format('woff2'); 
 }
 /* barlow-semi-condensed-600 - latin */
 @font-face {
@@ -12,7 +12,7 @@
   font-family: 'Barlow Semi Condensed';
   font-style: normal;
   font-weight: 600;
-  src: url('../fonts/barlow-semi-condensed-v16-latin-600.woff2') format('woff2'); 
+  src: url('../assets/fonts/barlow-semi-condensed-v16-latin-600.woff2') format('woff2'); 
 }
 
 :root {
@@ -44,10 +44,6 @@
 
     --font-weight-medium: 500;
     --font-weight-bold: 600;
-
-    /* Font sizes according to my own eyes */
-    --corrected-font-16: 1rem;
-    --corrected-font-12: 0.75rem;
 
     /* Font sizes according to Figma */
     --font-size-3: 1.25rem;     /* 20px */
@@ -174,13 +170,13 @@ body {
 }
 .card__top-text {
     color: var(--top-text-color);
-    font-size: var(--corrected-font-16);
+    font-size: var(--font-size-3);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-2);
 }
 .card__bottom-text {
     color:var(--bottom-text-color);
-    font-size: var(--corrected-font-12);
+    font-size: var(--font-size-2);
     font-weight: var(--font-weight-medium);
     line-height: var(--line-height-3);
 }
